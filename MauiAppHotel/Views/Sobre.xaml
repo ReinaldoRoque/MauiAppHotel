@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre" NavigationPage.HasNavigationBar="False" 
+             BackgroundColor="Grey">
+    <VerticalStackLayout VerticalOptions="EndAndExpand"
+                         Padding="10"
+                         Margin="10">
+
+        <Grid RowDefinitions="Auto,Auto">
+            <BoxView Grid.Row="0" HeightRequest="1" HorizontalOptions="Fill" />
+            <Label Grid.Row="1" Text="© 2025 - Reinaldo Roque de Oliveira"
+            HorizontalOptions="Center"
+            Padding="10" />
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
