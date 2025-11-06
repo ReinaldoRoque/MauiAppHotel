@@ -14,7 +14,8 @@
             FontSize="50"
             HorizontalTextAlignment="Center"/>
 
-        <Frame Margin="10">
+        <Frame Margin="10"
+               BackgroundColor="Black">
             <HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Label Text="Adultos: " />
@@ -28,20 +29,22 @@
             </HorizontalStackLayout>
         </Frame>
 
-        <Frame Margin="10">
+        <Frame Margin="10"
+               BackgroundColor="Black">
             <Grid ColumnDefinitions="*, *, *"
                   RowDefinitions="Auto, Auto">
                 <Label Grid.Row="0" Grid.Column="0" Text="Check-In: " />
                 <Label Grid.Row="0" Grid.Column="1" Text="Check-Out: " />
                 <Label Grid.Row="0" Grid.Column="2" Text="Estadia: " />
 
-                <Label Grid.Row="1" Grid.Column="0" Text="21/12/1222 " />
-                <Label Grid.Row="1" Grid.Column="1" Text="23/12/3222 " />
-                <Label Grid.Row="1" Grid.Column="2" Text="5 " />
+                <Label Grid.Row="1" Grid.Column="0" Text="06/11/2025 " />
+                <Label Grid.Row="1" Grid.Column="1" Text="08/11/2025 " />
+                <Label Grid.Row="1" Grid.Column="2" Text="2 " />
             </Grid>
         </Frame>
 
-        <Frame Margin="10">
+        <Frame Margin="10"
+               BackgroundColor="Black">
             <HorizontalStackLayout>
                 <Label Text="Valor Total: "/>
                 <Label Text="R$ 750,00"/>
@@ -50,7 +53,10 @@
 
         <Button Text="Voltar"
                 HorizontalOptions="Center"
-                Clicked="Button_Clicked"/>
+                BackgroundColor="black"
+                TextColor="White"
+                Clicked="Button_Clicked"
+                FontAttributes="Bold"/>
 
 
     </VerticalStackLayout>

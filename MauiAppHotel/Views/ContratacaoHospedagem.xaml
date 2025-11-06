@@ -14,14 +14,13 @@
                TextColor="black"
                HorizontalTextAlignment="Center"/>
 
-        <Frame Padding="10">
+        <Frame Padding="10" BackgroundColor="Black">
             <VerticalStackLayout>
                 <Grid RowDefinitions="auto, auto"
               ColumnDefinitions="*, *, 2*">
                     <Label Grid.Row="0" Grid.Column="0"
                            Text="Adultos: "/>
                     <Label Grid.Row="0" Grid.Column="1" 
-                           TextColor="LightGray"
                            Text="{Binding Value}"
                            BindingContext="{Reference stp_adultos}"/>
                     <Stepper Grid.Row="0" Grid.Column="2"
@@ -34,7 +33,6 @@
                     <Label Grid.Row="1" Grid.Column="0"
                           Text="Crianças: "/>
                     <Label Grid.Row="1" Grid.Column="1"
-                           TextColor="LightGray"
                            Text="{Binding Value}"
                            BindingContext="{Reference stp_crianca}"/>
                     <Stepper Grid.Row="1" Grid.Column="2"
@@ -51,8 +49,9 @@
                         ItemDisplayBinding="{Binding Descricao}"/>
 
                 <Frame Padding="10"
-                       Margin="10">
-                    <VerticalStackLayout>
+                       Margin="10"
+                       BackgroundColor="black">
+                    <VerticalStackLayout >
                         <Label Text="Período da Estadia"/>
 
                         <HorizontalStackLayout>
@@ -71,7 +70,11 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar" Clicked="Button_Clicked"/>
+                <Button Text="Avançar" 
+                        BackgroundColor="DarkGray"
+                        TextColor="Black"
+                        Clicked="Button_Clicked"
+                        FontAttributes="Bold"/>
 
             </VerticalStackLayout>
         </Frame>
