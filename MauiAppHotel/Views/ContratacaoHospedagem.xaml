@@ -7,7 +7,8 @@
              BackgroundColor="Grey">
 
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
-                         Padding="10">
+                         Padding="10"
+                         Spacing="10">
         <Label Text=" Cálculo da Diária "
               FontFamily="Pacifico"
                FontSize="45"
@@ -42,26 +43,34 @@
                              Increment="1"/>
                 </Grid>
 
-                <Label Text="Escolha sua Suíte"/>
+        <Frame Padding="10"
+               Margin="10">
+                   <VerticalStackLayout>
 
-                <Picker x:Name="pck_quarto"
+                      <Label Text="Escolha sua Suíte"
+                       TextTransform="Uppercase"
+                       FontSize="Subtitle"/>
+
+                    <Picker x:Name="pck_quarto"
                         Title="Selecione sua Acomodação"
-                        ItemDisplayBinding="{Binding Descricao}"/>
-
-                <Frame Padding="10"
+                        ItemDisplayBinding="{Binding Descricao}"></Picker>
+                    </VerticalStackLayout>
+        </Frame>
+                
+        <Frame Padding="10"
                        Margin="10"
                        BackgroundColor="black">
-                    <VerticalStackLayout >
+                    <VerticalStackLayout Spacing="10">
                         <Label Text="Período da Estadia"/>
 
-                        <HorizontalStackLayout>
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                             <Label Text="Check-In:"/>
                             <DatePicker x:Name="dtpck_checkin"
                                         DateSelected="dtpck_checkin_DateSelected"
                                         Format="dd/MM/yyyy"/>
                         </HorizontalStackLayout>
 
-                        <HorizontalStackLayout>
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                             <Label Text="Check-Out:"/>
                             <DatePicker x:Name="dtpck_checkout"
                                         Format="dd/MM/yyyy"/>
